@@ -1,0 +1,214 @@
+img {
+    width:200px;
+}
+
+/* CSS HEX 
+--gamboge: #f0a202ff;
+--tangerine: #f18805ff;
+--oxford-blue: #0e1428ff;
+--barn-red: #6f1a07ff;
+--cambridge-blue: #7b9e89ff;
+*/
+
+/* Global Styles
+....................................................... */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    width:300px;
+}
+
+a {
+    color:#f0a202ff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+
+.item-details h3 ~ p {
+    margin: 0;
+}
+
+ .divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+ }
+
+ .divider > section:last-of-type {
+    border-bottom: none;
+ }
+/* Profile
+....................................................... */
+header {
+    background:#0e1428ff;
+    color:#f7fff7;
+}
+
+/* Projects
+....................................................... */
+.projects {
+    background:#f7fff7;
+}
+
+.projects a {
+    color: #343434
+}
+
+.projects .btn {
+    background: #0e1428ff;
+    color:#f7fff7;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgb(47, 48, 97, 80%);
+}
+.project-items{
+    overflow: hidden;
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+
+.project-items h3 {
+    margin-top: 0;
+}
+
+
+/* Work Experience
+....................................................... */
+.work-experience {
+    background:#7b9e;
+}
+
+/* .job-details p {
+    line-height: 15px;
+    margin: 1;
+} */
+
+/* Education
+....................................................... */
+.education {
+    background-image: url(../Images/joanna-kosinska-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.education p {
+    width: 60%;
+}
+
+/* Contact
+....................................................... */
+
+
+
+/* Footer
+....................................................... */
+
+footer {
+    background: #0e1428ff;
+    color:#f7fff7;
+}  
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+   
+}
+
+.contact-list a {
+    padding: 15px;
+}
+
+/* Responsive Design
+....................................................... */
+
+@media screen and (min-width:750px) {
+
+    header, footer {
+        text-align: center;
+    }
+
+    .project-items img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-items {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+        }
+     }
+
+
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 75px;
+        line-height: .9;
+        margin-bottom: 20px;
+        
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+
+}
